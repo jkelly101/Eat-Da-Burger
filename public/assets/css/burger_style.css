@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+
+body{
+    background-color: goldenrod;
+    font-family: 'Ranchers', cursive; 
+    color: maroon;
+    text-align: center;
+}
+
+ol li{
+    list-style: none!important;
+}
+
+
+
