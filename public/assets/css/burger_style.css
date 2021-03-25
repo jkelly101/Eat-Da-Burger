@@ -1,15 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ranchers&display=swap");
 
-body{
-    background-color: goldenrod;
-    font-family: 'Ranchers', cursive; 
-    color: rgb(212, 66, 98);
-    text-align: center;
+body {
+  background-color: mediumaquamarine;
+  text-align: center;
+  padding: 20px;
 }
 
-ol li{
-    list-style: none!important;
+.title {
+  font-family: "Ranchers", cursive;
 }
 
+#main {
+  font-size: 50px;
+}
 
+#devoured,
+#menu {
+  background: mediumpurple;
+  border-radius: 15px;
+  min-height: 200px;
+}
 
+ol li {
+  list-style: none !important;
+}

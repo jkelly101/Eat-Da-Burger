@@ -1,6 +1,5 @@
 $("#add-burger").on("click", function (event) {
   event.preventDefault();
-  alert("hi");
   var newBurger = {
     burger_name: $("#ca").val().trim(),
     devoured: 0,
@@ -16,8 +15,6 @@ $("#add-burger").on("click", function (event) {
 
 $(".devourIt").on("click", function (event) {
   var id = $(this).data("id");
-  // var newSleep = $(this).data("newsleep");
-
   var newDevoured = {
     devoured: 1,
   };

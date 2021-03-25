@@ -1,8 +1,8 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
-            <h1>Eat-Da-Burger!</h1>
-            {{!-- <img src="/assets/img/18514977.jpg" alt="panda eating burger"> --}}
+            <h1 class="title" id="main">Eat-Da-Burger!</h1>
+            <img src="/assets/img/18514977.jpg" width="30%" height="30%" alt="panda eating burger">
             {{!-- <a href="https://www.freepik.com/vectors/food">Food vector created by catalyststuff - www.freepik.com</a>           --}}
         </div>
     </div>
@@ -10,25 +10,8 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-sm-4">
-            <h2>What Kind of Burger Do you Want to Eat?</h2>
-            <form class="create-form">
-
-            <div class="form-group">
-                <label for="ca">Burger Name:</label>
-                <input type="text" id="ca" name="name">
-            </div>
-
-            <button type="submit" id="add-burger">Add Burger</button>
-            </form>
-        </div>
-    </div>
-</div>
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-4">
-            <h2>Burger Menu:</h2>
+        <div class="col-sm-4" id="menu">
+            <h2 class="title">Burger Menu:</h2>
 
             <ol>
             {{#each burgers}}
@@ -41,13 +24,22 @@
             {{/each}}
             </ol>
         </div>
-    </div>
-</div>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-4">
-            <h2>Burgers You've Devoured!</h2>
+        <div class="col-sm-4" id="input">
+            <h2 class="title">What Kind of Burger Do you Want to Eat?</h2>
+            <form class="create-form">
+
+            <div class="form-group">
+                <label for="ca">Burger Name:</label>
+                <input type="text" id="ca" name="name">
+            </div>
+
+            <button type="submit" id="add-burger">Add Burger</button>
+            </form>
+        </div>
+
+        <div class="col-sm-4" id="devoured">
+            <h2 class="title">Burgers You've Devoured!</h2>
 
             <ol>
             {{#each burgers}}
