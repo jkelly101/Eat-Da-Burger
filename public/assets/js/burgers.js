@@ -19,13 +19,11 @@ $(".devourIt").on("click", function (event) {
     devoured: 1,
   };
 
-  // Send the PUT request.
   $.ajax("/api/burgers/" + id, {
     type: "PUT",
     data: newDevoured,
   }).then(function () {
     console.log("Yum!");
-    // Reload the page to get the updated list
     location.reload();
   });
 });
